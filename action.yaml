@@ -29,5 +29,5 @@ runs:
     - ${{ inputs.server_id }}
     - ${{ inputs.webroot }}
 branding:
-  icon: 'refresh'
+  icon: 'repeat'
   color: 'blue'
