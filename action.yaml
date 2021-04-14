@@ -1,0 +1,30 @@
+name: 'Update Cloudways App Webroot'
+description: 'Updates a Cloudways app webroot for use in atomic deployment'
+inputs:
+  email:
+    description: 'Cloudways account e-mail'
+    required: true
+  api_key:
+    description: 'Cloudways api key'
+    required: true
+  app_id:
+    description: 'Cloudways app ID'
+    required: true
+  server_id:
+    description: 'The ID of the Cloudways server where the app resides'
+    required: true
+  webroot:
+    description: 'The desired webroot'
+    required: true
+outputs:
+  success:
+    description: 'Was the request successful'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.email }}
+    - ${{ inputs.api_key }}
+    - ${{ inputs.app_id }}
+    - ${{ inputs.server_id }}
+    - ${{ inputs.webroot }}
