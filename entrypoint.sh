@@ -1,3 +1,5 @@
+#!/bin/bash
+
 api_url="https://api.cloudways.com/api/v1"
 echo $api_url
 
