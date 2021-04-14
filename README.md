@@ -19,6 +19,6 @@ steps:
 
 # TODO
 
-- [] Document
-- [] Look at options for returning success/failure
-- [] Icon
+- ⬜️ Document
+- ⬜ Look at options for returning success/failure
+- ⬜ Icon
