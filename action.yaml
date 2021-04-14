@@ -28,3 +28,6 @@ runs:
     - ${{ inputs.app_id }}
     - ${{ inputs.server_id }}
     - ${{ inputs.webroot }}
+branding:
+  icon: 'refresh'
+  color: 'blue'
