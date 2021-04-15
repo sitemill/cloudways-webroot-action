@@ -1,5 +1,5 @@
-name: 'Update Cloudways App Webroot'
-description: 'Updates a Cloudways app webroot for use in atomic deployment'
+name: 'Cloudways - Update webroot'
+description: 'Updates a Cloudways app webroot for use in an atomic deployment pipeline'
 inputs:
   email:
     description: 'Cloudways account e-mail'

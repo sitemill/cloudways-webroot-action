@@ -1,4 +1,4 @@
-# Update Cloudways App `webroot` action
+# Cloudways - Update `webroot` action
 A GitHub Action to update a Cloudways App's `webroot` for use in an atomic deployment pipeline.
 
 ## Example
