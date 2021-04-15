@@ -12,7 +12,7 @@ fi
 
 result=$(curl -XPOST -H "Authorization: Bearer ${token}" "${api_url}/app/manage/webroot?app_id=${INPUT_APP_ID}&server_id=${INPUT_SERVER_ID}&webroot=${INPUT_WEBROOT}" | jq -r ".status" )
 echo $result
-if [ ${result} ]; then
+if [[ $result = "null" ]]; then
   echo "Could not change webroot, check App & Site ID's are correct."
   exit 1
 fi
