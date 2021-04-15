@@ -17,4 +17,4 @@ fi
 
 echo "Webroot successfully updated to [${INPUT_WEBROOT}]"
 
-echo "::set-output name=success::$result"
+echo "::set-output name=webroot::${INPUT_WEBROOT}"
