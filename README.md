@@ -19,6 +19,7 @@ steps:
 
 # TODO
 
-- ⬜️ Document
-- ⬜ Look at options for returning success/failure
-- ⬜ Icon
+- ⬜ Convert to JS action
+- ⬜️ Better documentation
+- ✅ Look at options for returning success/failure
+- ✅️ Icon
