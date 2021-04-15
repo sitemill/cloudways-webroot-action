@@ -8,7 +8,7 @@ You can obtain the App + Server ID's by looking at the URL for respective app/se
 ```
 steps:
   - name: Update webroot
-    uses: sitemill/cloudways-webroot-action@main
+    uses: sitemill/cloudways-webroot-action@v1.0.2
     with:
       email: your@email.com
       api_key: <apiKey>
