@@ -5,7 +5,7 @@ echo $api_url
 
 token=$(curl "${api_url}/oauth/access_token?email=${INPUT_EMAIL}&api_key=${INPUT_API_KEY}" | jq -r ".access_token")
 echo $token
-if [ -z "${token}" ]; then
+if [[ ! $token ]]; then
   echo "Could not obtain access token, check account email and api key."
   exit 1
 fi
