@@ -9,4 +9,11 @@ echo $token
 result=$(curl -XPOST -H "Authorization: Bearer ${token}" "${api_url}/app/manage/webroot?app_id=${INPUT_APP_ID}&server_id=${INPUT_SERVER_ID}&webroot=${INPUT_WEBROOT}" | jq -r ".status" )
 echo $result
 
+if $result ; then
+  echo "Could not change webroot"
+  exit 1
+fi
+
+echo "Webroot successfully updated to [${INPUT_WEBROOT}]"
+
 echo "::set-output name=success::$result"
